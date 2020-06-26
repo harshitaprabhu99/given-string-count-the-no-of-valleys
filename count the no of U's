@@ -1,0 +1,13 @@
+val=0
+level=0
+n=int(input())
+s=str(input())
+s.split()
+for i in s:
+  if(i=='U'):
+    level=level+1
+  if(i=='D'):
+    level=level-1
+  if(level==0 and i=='U'):
+    val=val+1
+print(val)
